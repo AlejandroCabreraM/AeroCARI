@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Aeropuerto AeroCaRi - Inicio de sesión</title>
+  <link rel="stylesheet" href="css/style.css" />
+  <link rel="stylesheet" href="css/CssFormulario.css" />
+  
+  <link rel="stylesheet" href="css/Carrusel.css">
+</head>
+
+<body>
+   <?php
+    $varinicio = "false";
+   ?>
+  <section style="padding: 0.3rem">
+    <header style="background-color: hsla(0, 0%, 0%, 0.2)">
+      <h1 id="my-text">Aeropuerto AeroCaRi</h1>
+      <p>Tu viaje comienza aquí</p>
+    </header>
+    <script src="https://unpkg.com/gsap@3"></script>
+        <script>
+        gsap.to("#my-text", { x: 250, duration: 1, ease: "power2.inOut", yoyo: true, repeat: -1 });
+        </script>
+  </section>
+
+  <nav class="viñeta-principal contenedor">
+    <a href="FormularioAvion.php">Reservar</a>
+    <a href="index.html">Destinos</a>
+    <a href="Promociones.html">Promociones</a>
+    <details>
+      <summary><br>Login</summary>
+      <ul>
+        <li><a href="FormularioInicio.html">Iniciar sesión</a></li>
+        <li><a href="Registrarse.html">Registrarme</a></li>
+        <li><a href="Logout.php">Cerrar sesión</a></li>
+      </ul>
+    </details>
+  </nav>
+<br>
+  <div  style="display: flex; flex-direction: row; align-items: center;" >
+  <div class="container-carrusel">
+    <div class="container-img">
+
+      <img src="img/Francia.jpg" alt="">
+      <img src="img/NY.jpg" alt="">
+      <img src="img/japon.jpg" alt="">
+      <img src="img/Italy.jpg" alt=""> 
+      <img src="img/Spain.jpg" alt="">
+      <img src="img/Spain.jpg" alt="">
+    </div>
+    <div class="container-boton">
+      <div class="container-boton_next">&#62;</div>
+      <div class="container-boton_prev">&#60;</div>
+    </div>
+  </div>
+
+  <script src="js/jquery-3.6.0.min.js"></script>
+<script src="js/jquery-3.7.1.min.js"></script>
+    <script src="js/slider.js"></script>
+
+  <section style="margin-top: 3rem; margin-bottom: 3rem; margin-right: auto;">
+    <div class="formulario2">
+      <h1>Inicio de sesion</h1>
+
+      <form action="Login.php" method="post">
+        <div class="username">
+          <input type="text" name= "usuario" required />
+          <label>Email</label>
+        </div>
+        <div class="username">
+          <input type="password"  name= "pass" required />
+          <label>Contraseña</label>
+        </div>
+        <div class="recordar" style="margin-left: 2rem;">¿Olvidó su contraseña?</div>
+        <br />
+        <input type="submit" value="Iniciar" name= "inicio"style="margin-left: 4.5rem;" />
+        <div class="registrarse">Quiero <a href="Registrarse.html">registrarme</a></div>
+        
+      </form>
+      
+    </div>
+  </section>
+</div>
+<br>
+  <footer>
+    <p>
+      &copy; 2023 Aeropuerto AeroCaRi <br />
+      Todos los derechos reservados a Valeria y Alejandro
+    </p>
+  </footer>
+
+</body>
+
+</html>

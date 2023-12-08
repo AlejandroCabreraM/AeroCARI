@@ -1,0 +1,45 @@
+img{
+    display: block;
+    width: 100%;
+}
+
+.container-carrusel{
+    width: 100%;
+    margin: auto;
+    position: relative;
+    max-width: 1200px; /*le da el tamaño a las imagenes*/
+    max-width: 900px;
+    overflow: hidden;
+}
+
+.container-img{
+    position: relative;
+    display: flex;
+    width: 100%; /*le da el tamaño a las imagenes*/
+}
+
+.container-boton_next, .container-boton_prev{
+    width: 50px;
+    border-radius: 50%;
+    background-color: blanchedalmond;
+    text-align: center;
+    line-height: 50px;
+    font-size: 30px;
+    font-weight: bold;
+    cursor: pointer;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+}
+
+.container-boton_next:hover,.container-boton_prev:hover{
+    background-color: brown;
+}
+
+.container-boton_next{
+    right: 5px;
+}
+
+.container-boton_prev{
+    left: 5px;
+}

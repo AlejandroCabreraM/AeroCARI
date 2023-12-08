@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Registrarse</title>
+    <link rel="stylesheet" href="css/style.css" />
+    <link rel="stylesheet" href="css/CssFormulario.css" />
+  </head>
+
+  <body>
+    <section style="padding: 0.3rem">
+      <header style="background-color: hsla(0, 0%, 0%, 0.2)">
+        <h1 id="my-text">Aeropuerto AeroCaRi</h1>
+        <p>Tu viaje comienza aquí</p>
+      </header>
+      <script src="https://unpkg.com/gsap@3"></script>
+        <script>
+        gsap.to("#my-text", { x: 250, duration: 1, ease: "power2.inOut", yoyo: true, repeat: -1 });
+        </script>
+    </section>
+
+
+    <nav class="viñeta-principal contenedor">
+      <a href="FormularioAvion.php">Reservar</a>
+      <a href="index.html">Destinos</a>
+      <a href="Promociones.html">Promociones</a>
+      <details>
+        <summary><img src="img/user.png"  width="30" height="30"  style="vertical-align: middle;"><br>Login</summary>
+        <ul>
+          <li><a href="FormularioInicio.html">Iniciar sesión</a></li>
+          <li><a href="Registrarse.html">Registrarme</a></li>
+          <li><a href="Logout.php">Cerrar sesión</a></li>
+        </ul>
+      </details>
+    </nav>
+
+    <section style="margin-top: 3rem; margin-bottom: 3rem">
+      <div class="formulario2">
+        <h1>Crear cuenta</h1>
+
+         <!--<form action="FormularioInicio.html">-->
+          
+          <form action="Login.php" method="post" id= "formR">
+            
+          <div class="username">
+            <input type="text" id = "userR" name= "usuario" />
+            <label>Email</label>
+          </div>
+          <div class="username">
+            <input type="password"  id = "passR" name= "pass" />
+            <label>Crear contraseña</label>
+          </div>
+          <br>
+          
+          <input type="submit" value="Registrarme" name="registro" style="margin-left: 4.5rem;" onclick="return enviarRegistro();" />
+          <p class="warnings" id="warnings"></p>
+          <script src="js/Validaciones.js"></script>
+        </form>
+
+      </div>
+    </section>
+
+    <footer>
+      <p>
+        &copy; 2023 Aeropuerto AeroCaRi <br />
+        Todos los derechos reservados a Valeria y Alejandro
+      </p>
+    </footer>
+    
+  </body>
+</html>

@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Aeropuerto AeroCaRi - Promociones</title>
+  <link rel="stylesheet" href="css/CssPromociones.css" />
+  <link rel="stylesheet" href="css/style.css" />
+</head>
+
+<body>
+  <section style="padding: 0.3rem">
+    <header style="background-color: hsla(0, 0%, 0%, 0.2)">
+      <h1 id="my-text">Aeropuerto AeroCaRi</h1>
+      <p>Tu viaje comienza aquí</p>
+    </header>
+    <script src="https://unpkg.com/gsap@3"></script>
+        <script>
+        gsap.to("#my-text", { x: 250, duration: 1, ease: "power2.inOut", yoyo: true, repeat: -1 });
+        </script>
+  </section>
+
+
+  <nav class="viñeta-principal contenedor">
+    <a href="FormularioAvion.php">Reservar</a>
+    <a href="index.html">Destinos</a>
+    <a href="Promociones.html">Promociones</a>
+    <details>
+      <summary><img src="img/user.png"  width="30" height="30"  style="vertical-align: middle;"><br>Login</summary>
+      <ul>
+        <li><a href="FormularioInicio.html">Iniciar sesión</a></li>
+        <li><a href="Registrarse.html">Registrarme</a></li>
+        <li><a href="Logout.php">Cerrar sesión</a></li>
+      </ul>
+    </details>
+  </nav>
+
+  <script src="js/confetti.js"></script>
+    <script>
+        // start
+
+        const start = () => {
+            setTimeout(function() {
+                confetti.start()
+            }, 1000); // 1000 is time that after 1 second start the confetti ( 1000 = 1 sec)
+        };
+        //  Stop
+        const stop = () => {
+            setTimeout(function() {
+                confetti.stop()
+            }, 5000); // 5000 is time that after 5 second stop the confetti ( 5000 = 5 sec)
+        };
+
+        start();
+        stop();
+    </script>
+
+  <div class="slider-box">
+    <ul>
+      <li>
+        <img src="img/viaje.jpg" alt="" style="width:555px;  height:300px">
+        <div class="texto">
+          <h2>Viaja sin límites</h2>
+          <p>
+            Vuela a los mejores destinos
+            con los mejores precio con AeroCaRi.
+          </p>
+        </div>
+      </li>
+
+      <li>
+        <img src="img/pasajeros.jpg" alt="" height="300">
+        <div class="texto">
+          <h2>Queremos que visites nuevos lugares</h2>
+          <p>
+            No límites tus experiencias, con AeroCaRi
+            las hacemos realidad.
+          </p>
+        </div>
+      </li>
+
+      <li>
+        <img src="img/maletas.jpg" alt="" height="300">
+        <div class="texto">
+          <h2>Destinos de temporada</h2>
+          <p>
+            Descubre nuevos lugares con promociones que tenmos para ti
+          </p>
+        </div>
+      </li>
+
+      <li>
+        <img src="img/aero.png" alt="" height="300">
+        <div class="texto">
+          <h2>Destinos de temporada</h2>
+          <p>
+            Descubre nuevos lugares con promociones que tenmos para ti
+          </p>
+        </div>
+      </li>
+    </ul>
+  </div>
+
+  <div class="contenedor">
+    <section class="promociones" style="margin-top: 3rem; margin-bottom: 3rem">
+      <h2>Promociones</h2>
+      <div class="contenedores">
+
+        <div class="promocion contenedor2">
+          <img class="img" src="img/Paris.jpg" alt="Oferta 1" />
+          <h2>Oferta especial a París, Francia</h2>
+          <p>
+            Disfruta de nuestras tarifas especiales para viajar a París, la
+            Ciudad de la Luz. ¡No te pierdas esta oportunidad única!
+          </p>
+          <a href="FormularioAvion.php">Reservar ahora</a><br>
+        </div>
+
+        <div class="promocion contenedor2">
+          <img class="img" src="img/york.jpg" alt="Oferta 2" />
+          <h2>Oferta exclusiva a Nueva York, EE. UU.</h2>
+          <p>
+            Descubre la Gran Manzana con nuestras tarifas exclusivas. ¡Aprovecha
+            esta oferta antes de que se agote!
+          </p>
+          <a href="FormularioAvion.php">Reservar ahora</a><br>
+        </div>
+
+        <div class="promocion contenedor2">
+          <img class="img" src="img/tokio.jpg" alt="Oferta 3" />
+          <h2>¡Oferta especial a Tokio, Japón!</h2>
+          <p>
+            Experimenta la magia de Tokio con tarifas reducidas. ¡No dejes pasar
+            esta increíble oportunidad!
+          </p>
+          <a href="FormularioAvion.php">Reservar ahora</a><br>
+        </div>
+
+        <div class="promocion contenedor2">
+          <img class="img" src="img/venecia.jpg" alt="Oferta 4" />
+          <h2>¡Oferta única a Venecia, Italia!</h2>
+          <p>
+            Explora la magia de Venecia con precios especiales. ¡Aprovecha esta increíble ocasión!
+          </p>
+          <a href="FormularioAvion.php">Reservar ahora</a><br>
+        </div>
+      </div>
+    </section>
+  </div>
+
+  <div class="video" style="margin-bottom: 3rem;">
+    <section class="promociones">
+      <iframe class="video-small" width="280" height="158"
+        src="https://www.youtube.com/embed/wjwm7aRuvRU?si=f2MgpQ6N8aZwckLC" title="YouTube video player" frameborder="0"
+        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+        allowfullscreen></iframe>
+    </section>
+    <section class="promociones">
+      <iframe class="video-small" width="280" height="158"
+        src="https://www.youtube.com/embed/eOylf5UiB8M?si=-FoNCDNpN9URiz4M" title="YouTube video player" frameborder="0"
+        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+        allowfullscreen></iframe>
+    </section>
+  </div>
+
+  <footer>
+    <p>
+      &copy; 2023 Aeropuerto AeroCaRi <br />
+      Todos los derechos reservados a Valeria y Alejandro
+    </p>
+  </footer>
+
+</body>
+
+</html>

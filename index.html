@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Aeropuerto AeroCaRi - Destinos</title>
+  <link rel="stylesheet" href="css/CssDestinos.css">
+  <link rel="stylesheet" href="css/style.css">
+  
+</head>
+<script src="https://unpkg.com/gsap@3"></script>
+        <script>
+        gsap.to("#my-text", { x: 250, duration: 1, ease: "power2.inOut", yoyo: true, repeat: -1 });
+        </script>
+<style>
+
+</style>
+<body>
+  <section style="padding: 0.3rem">
+    <header style="background-color: hsla(0, 0%, 0%, 0.2)">
+      <h1>Aeropuerto AeroCaRi</h1>
+      <p>Tu viaje comienza aquí</p>
+    </header>
+  </section>
+ 
+  <nav class="viñeta-principal contenedor">
+    <a href="FormularioAvion.php">Reservar</a>
+    <a href="index.html">Destinos</a>
+    <a href="Promociones.html">Promociones</a>
+    <details>
+      <summary><img src="img/user.png"  width="30" height="30"  style="vertical-align: middle;"><br>Login</summary>
+      <ul>
+        <li><a href="FormularioInicio.html">Iniciar sesión</a></li>
+        <li><a href="Registrarse.html">Registrarme</a></li>
+        <li><a href="Logout.php">Cerrar sesión</a></li>
+      </ul>
+    </details>
+  </nav>
+
+  <script src="js/confetti.js"></script>
+    <script>
+        // start
+
+        const start = () => {
+            setTimeout(function() {
+                confetti.start()
+            }, 1000); // 1000 is time that after 1 second start the confetti ( 1000 = 1 sec)
+        };
+        //  Stop
+        const stop = () => {
+            setTimeout(function() {
+                confetti.stop()
+            }, 5000); // 5000 is time that after 5 second stop the confetti ( 5000 = 5 sec)
+        };
+
+        start();
+        stop();
+    </script>
+
+  <div class="contenedor">
+    <section class="destinos" style="margin-top: 3rem; margin-bottom: 3rem;">
+      <h2>Destinos populares</h2>
+
+      <div class="destino">
+        <img class="img" src="img/Paris.jpg" alt="París" />
+        <div>
+          <h2>París, Francia</h2>
+          <p>
+            París, la Ciudad de la Luz, es conocida por su romance y encanto.
+            Es hogar de la icónica Torre Eiffel, el Louvre, Notre-Dame y
+            numerosos cafés encantadores. Disfruta de la exquisita gastronomía
+            francesa, pasea por los Campos Elíseos y explora la rica historia
+            y cultura de la ciudad.
+          </p>
+        </div>
+        <a href="FormularioAvion.php"> Reservar viaje</a>
+      </div>
+
+
+      <div class="destino">
+        <img class="img" src="img/york.jpg" alt="Nueva York" />
+        <div>
+          <h2>Nueva York, EE. UU.</h2>
+          <p>
+            Nueva York, la Gran Manzana, es una metrópolis vibrante y diversa.
+            Con rascacielos emblemáticos como el Empire State Building y el
+            Central Park, la ciudad nunca duerme. Disfruta de teatro de
+            Broadway, compras en la Quinta Avenida y una rica escena culinaria
+            de todo el mundo.
+          </p>
+        </div>
+        <a href="FormularioAvion.php">Reservar viaje</a>
+      </div>
+
+      <div class="destino">
+        <img class="img" src="img/tokio.jpg" alt="Tokio" />
+        <div>
+          <h2>Tokio, Japón</h2>
+          <p>
+            Tokio es una mezcla de tradición y modernidad. Desde los templos
+            antiguos como el Templo Sensoji hasta la tecnología de vanguardia
+            en Akihabara, la ciudad ofrece una experiencia única. Prueba la
+            deliciosa comida japonesa, sumérgete en la cultura pop y explora
+            los barrios únicos de la ciudad.
+          </p>
+        </div>
+        <a href="FormularioAvion.php"> Reservar viaje</a>
+      </div>
+
+
+      <div class="destino">
+        <img class="img" src="img/venecia.jpg" alt="Venecia" />
+        <div>
+          <h2>Venecia, Italia</h2>
+          <p>
+            Venecia es una ciudad única construida sobre el agua en la laguna
+            del Adriático. Sus canales y puentes, incluyendo el famoso Puente
+            de Rialto, son icónicos. Disfruta de un paseo en góndola, visita
+            la Plaza de San Marcos y saborea la auténtica pasta italiana en
+            sus encantadores restaurantes.
+          </p>
+        </div>
+        <a href="FormularioAvion.php"> Reservar viaje</a>
+      </div>
+
+
+      <div class="destino">
+        <img class="img" src="img/madrid.jpg" alt="Madrid" />
+        <div>
+          <h2>Madrid, España</h2>
+          <p>
+            Madrid es la bulliciosa capital de España con una rica herencia
+            cultural. Visita el majestuoso Palacio Real, el Museo del Prado y
+            el Parque del Retiro. Disfruta de la animada vida nocturna, los
+            bares de tapas y la pasión por el fútbol en esta ciudad llena de
+            energía.
+          </p>
+        </div>
+        <a href="FormularioAvion.php"> Reservar viaje</a>
+      </div>
+
+    </section>
+  </div>
+  <footer>
+    <p>
+      &copy; 2023 Aeropuerto AeroCaRi <br />
+      Todos los derechos reservados a Valeria y Alejandro
+    </p>
+  </footer>
+</body>
+
+</html>

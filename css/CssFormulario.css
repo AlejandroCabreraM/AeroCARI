@@ -1,0 +1,101 @@
+:root {
+    /*SECCION PARA AGREGAR COLORES*/
+    --blanco: #ffffff;
+    --oscuro: #212121;
+    --primario: #FFc107;
+    --secundario: #0097a7;
+    --gris: #757575;
+    --grisClaro: #D9DEE5;
+    --azultec: #114c75;
+    --preferido: #FF1362;
+    --dorado: #d0af41;
+    --doradobajo: #b2932c;
+}
+
+/* Encabezado */
+header {
+    background-color: #2398e8;
+    color: white;
+    text-align: center;
+    padding: 20px 0;
+}
+
+header h1 {
+    font-size: 3.8rem;
+    margin: 0;
+    color: var(--dorado);
+}
+
+header p {
+    font-size: 2rem;
+    margin: 0;
+    color: var(--doradobajo);
+}
+
+/* Menú de navegación */
+nav {
+    background-color: var(--azultec);
+    color: white;
+    text-align: center;
+    padding: 10px 0;
+}
+
+nav a {
+    text-decoration: none;
+    color: var(--dorado);
+}
+
+/* Pie de página */
+footer {
+    background-color: #333;
+    color: white;
+    text-align: center;
+    padding: 10px 0;
+}
+
+.viñeta-principal {
+    display: flex;
+    flex-direction: column;
+}
+
+@media (min-width: 768px) {
+    .viñeta-principal {
+        flex-direction: row;
+        justify-content: space-between;
+    }
+}
+
+@media (min-width: 550px) {
+    .formulario2 {
+        padding: 20px;
+        margin: auto;
+        width: 400px;
+        background: white;
+        border-radius: 10px;
+    }
+}
+
+
+.viñeta-principal a {
+    display: block;
+    text-align: center;
+    color: var(--blanco);
+    text-decoration: none;
+    font-size: 2rem;
+    font-weight: 700;
+    padding: 1rem;
+}
+
+
+.viñeta-principal a:hover {
+    background-color: var(--primario);
+    color: var(--oscuro);
+}
+
+.warnings{
+    width: 200px;
+    text-align: center;
+    margin: auto;
+    color: #114c75;
+    padding-top: 20px;
+}
